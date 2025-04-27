@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* Pure white */
+    --foreground: 0 70% 30%; /* Deep maple red */
+    --card: 0 0% 98%; /* Almost white */
+    --card-foreground: 0 70% 30%;
+    --popover: 0 0% 98%;
+    --popover-foreground: 0 70% 30%;
+    --primary: 0 85% 45%; /* Strong maple red */
+    --primary-foreground: 0 0% 100%; /* Text on red is white */
+    --secondary: 0 50% 90%; /* Soft blush */
+    --secondary-foreground: 0 70% 30%;
+    --muted: 0 0% 95%; /* Light grey */
+    --muted-foreground: 0 30% 40%;
+    --accent: 0 85% 60%; /* Brighter maple highlight */
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 70% 50%; /* Blood red */
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 90%; /* Light grey border */
+    --input: 0 0% 90%;
+    --ring: 0 70% 30%;
+    --chart-1: 0 85% 45%;
+    --chart-2: 0 85% 60%;
+    --chart-3: 0 70% 30%;
+    --chart-4: 0 60% 50%;
+    --chart-5: 0 50% 40%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    --background: 0 0% 10%; /* Deep dark grey */
+    --foreground: 0 0% 100%; /* White */
+    --card: 0 0% 15%;
+    --card-foreground: 0 0% 100%;
+    --popover: 0 0% 15%;
+    --popover-foreground: 0 0% 100%;
+    --primary: 0 85% 60%;
+    --primary-foreground: 0 0% 15%;
+    --secondary: 0 60% 25%; /* muted dark red */
+    --secondary-foreground: 0 0% 100%;
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 70%;
+    --accent: 0 85% 45%;
+    --accent-foreground: 0 0% 15%;
+    --destructive: 0 70% 40%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 85% 45%;
+    --chart-1: 0 85% 45%;
+    --chart-2: 0 85% 60%;
+    --chart-3: 0 70% 30%;
+    --chart-4: 0 60% 50%;
+    --chart-5: 0 50% 40%;
+  }
+}
+
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    @apply bg-background text-foreground;
+  }
+}
+
+
+@layer utilities {
+  .gradient-title {
+    @apply font-extrabold bg-gradient-to-br from-[#9b2226] via-[#d92d3e] to-[#ef3e42] bg-clip-text tracking-tighter text-transparent pr-2 pb-2;
+  }
+}
+
+
+.ql-toolbar {
+  border-radius: 5px;
+}
+
+.ql-container {
+  min-height: 80vh;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.ql-editor {
+  height: 100%;
+  flex: 1;
+  overflow-y: auto;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
