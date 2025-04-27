@@ -28,11 +28,7 @@ Write, view, and manage your personal journal entries with secure authentication
    ```
 ```
 
-
----
-
-
-## 🙏 Acknowledgements
+🙏 Acknowledgements
 
 - [Clerk](https://clerk.dev/) - Authentication
 - [Prisma](https://www.prisma.io/) - Database ORM
@@ -40,18 +36,13 @@ Write, view, and manage your personal journal entries with secure authentication
 - [shadcn/ui](https://ui.shadcn.dev/) - Beautiful UI Components
 - [ArcJet](https://arcjet.com/) - API protection
 
----
 
-## 💖 Author
+Author
 
 Made  by [Akira](https://github.com/Akira-Shi), in reference to the journal-app project done by [Piyush](https://github.com/piyush-eon)
 
----
 
-## 📜 License
-
+License
 This project is licensed under the [MIT License](LICENSE).
 
----
-
-# 🌸
+🌸
